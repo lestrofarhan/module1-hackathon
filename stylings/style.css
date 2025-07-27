@@ -14,8 +14,10 @@ section.nav-geo{
     border-radius: 30px;
     position: relative;
     cursor: pointer;
+}    
+.fifty{
+    width: 50%;
 }
-
 
 .nav-item{
     color: black;
@@ -55,67 +57,265 @@ section.nav-geo{
 }
 
 
-.cards-geo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 10px;
-} 
+section{
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 20px;
+}    
 
-.card-h1{
+
+.gap-40{
+    gap: 40px;
+}    
+
+.main h2{
     font-size: 34px;
+    font-weight: 400;
+}    
+.main h1{
+    font-size: 48px;
     font-weight: 700;
+}    
+.believe-box{
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px -6px;
+    border-radius: 25px;
+    flex-direction: column;
     text-align: center;
-    margin: 40px 0;
-}
-.card{
- padding: 0;
-
 }
 
-.card h1{
-    font-size: 20px !important;
+.believe-box h2{
+     font-size: 40px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.believe-box h3{
+     font-size: 32px;
+    font-weight: 700;
+}
+.believe-content h2 {
+    font-size: 32px ;
     font-weight: 700;
 }
 
-.journey{
-    margin: 30px 0;
+.journey-content h2{
+    font-size: 40px ;
+
+}
+.socialIcons{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    
+    width: 70%;
+    margin: 30px 0 0;
 }
-.journey-geo{
-    max-width: 700px;
+
+.styled-grid-box{
+    display: grid;
+
+    grid-template-areas: "box-1 box-2 box-3" "box-4 box-5 box-3"
 }
-.journey-geo h1{
-    font-size: 40px;
+
+.styled-grid{
+    background-color: yellow;
+    margin: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    border-radius: 20px;
+    padding: 25px 20px;
+    max-width: 357px;
+}
+
+.styled-grid h3{
+    font-size: 24px ;
     font-weight: 700;
 }
-.journey-geo p{
-    font-size: 16px;
-    font-weight: 400;
+.styled-grid img{
+    width: 100%;
+    align-self: center;
+}
+.box-1 img{
+ max-width: 128px;
+}
+.box-3 img{
+max-width: 309px;
+}
+.box-2 img, .box-5 img{
+    max-width: 256px;
+}
+.box-4 img{
+    max-width: 160px;
+
+}
+.box-1{
+    grid-area: box-1;
+    background-color: #FBCFE8;
+}
+.box-2{
+    grid-area: box-2;
+    background-color: #BFDBFE;
+}
+.box-3{
+    grid-area: box-3;
+    background-color: #FEF08A;
+}
+.box-4{
+    grid-area: box-4;
+    background-color: #FED7AA;
+}
+.box-5{
+    grid-area: box-5;
+    background-color: #E9D5FF;
+}
+
+.divide {
+    margin-top: 150px;
+    font-size: 40px;
+    font-weight: 700;
+   text-align: center;
+}
+
+.miss-box h2{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+.miss-box{
+    line-height: 24px;
+    background-color: #fff;
+    padding: 35px 35px;
+    border-radius: 20px;
+}
+.cards-geo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.caard{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.caard img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.caard h3{
+font-size: 20px;
+font-weight: 700;
+line-height: 34px;
+margin: 10px 20px;
+}
+
+.caard p{
+    line-height: 20px;
+    margin: 10px 20px   ;
+    font-size: 14px;
 }
 
 
 
+form{
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    flex-wrap: wrap ;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px -10px;
+    gap: 35px;
+}
 
+input , textarea{
+    border: 2px solid #E1E1E1;
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 24px;
+}
 
+input[type="text"]{
+    width: 47%;
+}
+input:hover , textarea:hover{
+    border: 2px solid black;
+}
+input:active , textarea:active{
+    border: 2px solid #6851FF;
 
+}
+input::placeholder , textarea::placeholder{
+    font-size: 16px;
+}
 
+form button{
+ color: white;
+ border: none;
+ text-transform: uppercase;
+ font-size: 16px;
+ padding: 7px 21px;
+ border-radius: 5px;
+ background-color: #6851FF;
+ transition: all 0.2s ease-in;
+}
 
+form button:hover{
+    background-color: #4838B2;
 
+}
 
 /* responsiveness */
 
-@media only screen  and (max-width : 999) {
+@media only screen  and (max-width : 999px) {
     .nav-geo{
-      width: 100vw;
+        width: 100vw;
+    }
+    .main h1{
+        font-size: 32px;
+    }
+    .believe-box h2{
+        font-size: 32px;
     }
     
     .journey{
         flex-direction: column;
     }
+    .cards-geo{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+@media only screen  and (max-width : 770px) {
+    .gap-40{
+        flex-direction: column;
+    }
+    .fifty{
+        width: 100%;
+    }
+    .styled-grid-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .styled-grid{
+        width: 100%;
+        max-width: none;
+    }
+}
+@media only screen  and (max-width : 600px) {
+    
+    .cards-geo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+input[type="text"]{
+    width: 100%;
+}
 }
