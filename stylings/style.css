@@ -55,6 +55,50 @@ section.nav-geo{
 }
 
 
+.cards-geo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+} 
+
+.card-h1{
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    margin: 40px 0;
+}
+.card{
+ padding: 0;
+
+}
+
+.card h1{
+    font-size: 20px !important;
+    font-weight: 700;
+}
+
+.journey{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.journey-geo{
+    max-width: 700px;
+}
+.journey-geo h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.journey-geo p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
 
 
 
@@ -66,8 +110,12 @@ section.nav-geo{
 
 /* responsiveness */
 
-@media only screen  and (max-width : 991) {
+@media only screen  and (max-width : 999) {
     .nav-geo{
       width: 100vw;
+    }
+    
+    .journey{
+        flex-direction: column;
     }
 }
